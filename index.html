@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <p>Digite os valores e escolha a operação:</p>
+        <form class="calculadora-form">
+            <input type="number" class="input1" placeholder="Número 1">
+            <input type="number" class="input2" placeholder="Número 2">
+            <select class="operacao">
+                <option operação" value="">Selecione a operação</option>
+                <option class="somar" value="somar">Somar</option>
+                <option class="subtrair" value="subtrair">Subtrair</option>
+                <option class="Multiplicar" value="Multiplicar">Multiplicar</option>
+                <option class="dividir" value="dividir">Dividir</option>
+            </select>
+            <button class="botao-resultado" onclick="pegarValores()" type="submit">Calcular</button>
+            <button class="botao-limpar-campos" onclick="limparCampos()" type="reset">Limpar campos</button>
+            <button class="botao-limpar-resultado" onclick="limparResultado()" type="reset">Limpar resultados</button>
+        </form>
+        <div class="resultado-container">
+            <div class="resultado-valor"></div>
+        </div>
+</body>
+<script src="script.js"></script>
+
+</html>
